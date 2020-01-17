@@ -13,7 +13,7 @@ const server = express()
 // });
 server.use('/races', racesRoutes);
 
-server.use('/', () => {
+server.use('/', (req,res) => {
     res.status(200).send('Hello from express')
 })
 
